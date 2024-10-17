@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro"
+    android:orientation="vertical"
+    android:background="#BDECB6">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:src="@drawable/baseline_email_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO"
+        android:textColor="#008F39"
+        android:gravity="center"
+        android:textSize="80px"
+        android:layout_marginVertical="20dp"
+        />
+
+    <EditText
+        android:id="@+id/Rusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:paddingStart="10dp"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <!-- Campo Email -->
+    <EditText
+        android:id="@+id/Remail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:paddingStart="10dp"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <!-- Campo Password -->
+    <EditText
+        android:id="@+id/Rpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:paddingStart="10dp"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <!-- Botón Registrar -->
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:backgroundTint="#008F39"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="50dp"
+        />
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia Sesión"
+        android:textColor="#008F39"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:src="@drawable/logo_arcadia_library"
+        />
+
+
+</LinearLayout>

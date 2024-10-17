@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestionarLibroActivity"
+    android:orientation="vertical"
+    android:background="#BDECB6">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:text="GESTIONAR LIBROS"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#008F39"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ges_txttext"
+        android:hint="Nombre"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ges_cost"
+        android:hint="Costo"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/ges_available"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado"
+        android:inputType="text"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="50sp"
+        >
+
+        <Button
+            android:id="@+id/ges_btnactualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="EDITAR"
+            android:backgroundTint="#80FF00"
+            android:textColor="#008F39"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/ges_btnguardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Guardar"
+            android:backgroundTint="#80FF00"
+            android:textColor="#008F39"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/ges_btnborrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Borrar"
+            android:textColor="#008F39"
+            android:backgroundTint="#80FF00"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/btnRentarBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RENTAR LIBRO"
+            android:backgroundTint="#008F39"
+            android:layout_margin="30sp"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <EditText
+            android:id="@+id/rentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="Ingresa el correo para hacer la renta"
+            android:visibility="gone"
+            />
+
+
+        <Button
+            android:id="@+id/btnRentar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RENTAR LIBRO"
+            android:backgroundTint="#008F39"
+            android:layout_margin="30sp"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
